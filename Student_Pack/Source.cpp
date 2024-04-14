@@ -2,19 +2,45 @@
 //В рамках задания будут появляться новые требования.Необходимо иногда рефакторить код
 //(см low coupling, strong cohesion, SOLID, KISS, YAGNI, DRY и тд) под специфику требований, увеличивая сопровождаемость на будущее.
 
-//Этап 1
-//В предметной области есть Студент, студент может получать отметки.
+//Этап 2
+//В предметной области появляется Преподаватель, который может выставлять студентам отметки.
 //
-//Необходимо произвольной формулой вычислить является ли студент отличником.
-//
-//Архитектурный тест 1
-//Система должна позволять добавлять новых студентов, выставлять им оценки, определять кто отличник, а кто нет
+//Архитектурный тест 2
+//Система должна позволять добавлять новых преподавателей.Преподаватель может выставлять оценки произвольным студентам
 
 #include <iostream>
 #include <vector>
 #include <string>
 
 using namespace std;
+
+class Human
+{
+
+private:
+
+	string Name;
+	unsigned int Age;
+
+public:
+
+	int GetAge()
+	{
+		return Age;
+	}
+
+	string GetName()
+	{
+		return Name;
+	}
+
+	Human(string _Name, int _Age)
+	{
+		Name = _Name;
+		Age = abs(_Age);
+	}
+
+};
 
 class Subject
 {
@@ -71,34 +97,19 @@ public:
 
 };
 
-class Student
+class Student : public Human
 {
 
-private:
+private: 
 
-	string Name;
-	unsigned int Age;
 	string Direction;
 	vector<Subject> marks;
 
 public:
 
-	Student(string _Name, int _Age, string _Direction)
+	Student(string _Name, int _Age, string _Direction) : Human(_Name, _Age)
 	{
-		Name = _Name;
-		_Age = abs(_Age);
-		Age = _Age;
 		Direction = _Direction;
-	}
-
-	int GetAge()
-	{
-		return Age;
-	}
-
-	string GetName()
-	{
-		return Name;
 	}
 
 	string GetDirection()
@@ -147,6 +158,20 @@ public:
 
 };
 
+class Teacher: public Human
+{
+
+public:
+
+	Teacher(string _Name, int _Age) : Human(_Name, _Age) {};
+
+	void AddMarkToStudent(Student student, string subject, int assesment)
+	{
+		student.AddMark(subject, assesment);
+	}
+
+};
+
 int main()
 {
 	Student s("Yakov", 18, "Proginzh");
@@ -167,4 +192,6 @@ int main()
 
 	cout << "Is " << sname << " an excellent student ? Answer: " << s.IsExcellentStudent() << endl; 
 	cout << "Is " << bname << " an excellent student ? Answer: " << b.IsExcellentStudent() << endl;
+
+	Teacher t("Dmitry", 25);
 }
