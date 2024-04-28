@@ -12,7 +12,7 @@
 //хорошее настроение + не отличник = 4
 //плохое настроение + не отличник = 2 или 3 (равновероятно)
 
-#include "Teacher.h"
+#include "Lesson.h"
 #include <ctime>
 
 using namespace std;
@@ -22,18 +22,32 @@ int main()
 
 	srand(time(NULL));
 
+	Lesson l("OOP");
+
 	Teacher t("Georgiy", 28);
 	t.SetMood("good");
 
 	Student* s1 = new Student("Yakov", 19, "Progin");
 	Student* s2 = new Student("Vokay", 19, "Progin");
+	Student* s3 = new Student("Danya", 19, "Progin");
+	Student* s4 = new Student("Jimmy", 19, "Progin");
+	Student* s5 = new Student("Soul Goodman", 19, "Progin");
 
-	t.AddMarkToStudent(s1, "OOP", 5);
-	t.SetMood("bad");
-	for(int i = 0; i < 100; i++)
+	l.AddStudentIntAttendees(s1);
+	l.AddStudentIntAttendees(s2);
+	l.AddStudentIntAttendees(s3);
+	l.AddStudentIntAttendees(s4);
+	l.AddStudentIntAttendees(s5);
+
+
+	for (int i = 0; i < 30; i++)
 	{
-		t.AddMarkToStudent(s1, "OOP", 5);
+		l.AddAssesmentToStudent(t);
 	}
 
 	s1->PrintMarks();
+	s2->PrintMarks();
+	s3->PrintMarks();
+	s4->PrintMarks();
+	s5->PrintMarks();
 }
