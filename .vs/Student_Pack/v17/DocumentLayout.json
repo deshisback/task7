@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{A1CBEF24-8524-4883-BF6F-494230B7A87E}|Student_Pack\\Student_Pack.vcxproj|solutionrelative:Student_Pack\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1CBEF24-8524-4883-BF6F-494230B7A87E}|Student_Pack\\Student_Pack.vcxproj|C:\\Users\\\u0413\u043B\u0435\u0431\\source\\repos\\Student_Pack\\Student_Pack\\Lesson.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A1CBEF24-8524-4883-BF6F-494230B7A87E}|Student_Pack\\Student_Pack.vcxproj|solutionrelative:Student_Pack\\Lesson.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A1CBEF24-8524-4883-BF6F-494230B7A87E}|Student_Pack\\Student_Pack.vcxproj|C:\\Users\\\u0413\u043B\u0435\u0431\\source\\repos\\Student_Pack\\Student_Pack\\Teacher.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A1CBEF24-8524-4883-BF6F-494230B7A87E}|Student_Pack\\Student_Pack.vcxproj|solutionrelative:Student_Pack\\Teacher.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1CBEF24-8524-4883-BF6F-494230B7A87E}|Student_Pack\\Student_Pack.vcxproj|C:\\Users\\\u0413\u043B\u0435\u0431\\source\\repos\\Student_Pack\\Student_Pack\\Lesson.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A1CBEF24-8524-4883-BF6F-494230B7A87E}|Student_Pack\\Student_Pack.vcxproj|solutionrelative:Student_Pack\\Lesson.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A1CBEF24-8524-4883-BF6F-494230B7A87E}|Student_Pack\\Student_Pack.vcxproj|C:\\Users\\\u0413\u043B\u0435\u0431\\source\\repos\\Student_Pack\\Student_Pack\\Teacher.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A1CBEF24-8524-4883-BF6F-494230B7A87E}|Student_Pack\\Student_Pack.vcxproj|solutionrelative:Student_Pack\\Teacher.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,28 +30,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Lesson.h",
-              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\source\\repos\\Student_Pack\\Student_Pack\\Lesson.h",
-              "RelativeDocumentMoniker": "Student_Pack\\Lesson.h",
-              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\source\\repos\\Student_Pack\\Student_Pack\\Lesson.h",
-              "RelativeToolTip": "Student_Pack\\Lesson.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-28T13:32:05.246Z",
+              "DocumentIndex": 1,
+              "Title": "Teacher.cpp",
+              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\source\\repos\\Student_Pack\\Student_Pack\\Teacher.cpp",
+              "RelativeDocumentMoniker": "Student_Pack\\Teacher.cpp",
+              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\source\\repos\\Student_Pack\\Student_Pack\\Teacher.cpp",
+              "RelativeToolTip": "Student_Pack\\Teacher.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-29T04:04:34.472Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Lesson.cpp",
-              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\source\\repos\\Student_Pack\\Student_Pack\\Lesson.cpp",
-              "RelativeDocumentMoniker": "Student_Pack\\Lesson.cpp",
-              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\source\\repos\\Student_Pack\\Student_Pack\\Lesson.cpp",
-              "RelativeToolTip": "Student_Pack\\Lesson.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-04-28T13:31:49.923Z",
+              "DocumentIndex": 2,
+              "Title": "Teacher.h",
+              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\source\\repos\\Student_Pack\\Student_Pack\\Teacher.h",
+              "RelativeDocumentMoniker": "Student_Pack\\Teacher.h",
+              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\source\\repos\\Student_Pack\\Student_Pack\\Teacher.h",
+              "RelativeToolTip": "Student_Pack\\Teacher.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-29T04:00:27.928Z",
               "EditorCaption": ""
             },
             {
@@ -62,7 +62,7 @@
               "RelativeDocumentMoniker": "Student_Pack\\Source.cpp",
               "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\source\\repos\\Student_Pack\\Student_Pack\\Source.cpp",
               "RelativeToolTip": "Student_Pack\\Source.cpp",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAQwC8AAAAAAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-06T02:03:03.718Z",
               "EditorCaption": ""
