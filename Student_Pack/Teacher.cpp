@@ -1,6 +1,9 @@
 #include "Teacher.h"
 
-int TimeToSwitchMood = 5;
+void Teacher::SetTimeTiSwitchMood(int Time)
+{
+	TimeToSwitchMood = Time;
+}
 
 void Teacher::AddMarkToStudent(Student*& student, std::string subject, int assesment)
 {
