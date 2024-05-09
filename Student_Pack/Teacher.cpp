@@ -1,5 +1,7 @@
 #include "Teacher.h"
 
+int TimeToSwitchMood = 5;
+
 void Teacher::AddMarkToStudent(Student*& student, std::string subject, int assesment)
 {
 	bool IsEscellent = student->IsExcellentStudent();
@@ -14,34 +16,46 @@ void Teacher::AddMarkToStudent(Student*& student, std::string subject, int asses
 		student->AddMark(subject, 2);
 	}
 
-	else if (IsEscellent && CurrentMood == "good" && assesment == 5)
+	else if (IsEscellent && TeacherMood.GetCurrentMood() == "good" && assesment == 5)
 	{
 		student->AddMark(subject, assesment);
 	}
 
-	else if (IsEscellent && CurrentMood == "bad" && assesment == 5)
+	else if (IsEscellent && TeacherMood.GetCurrentMood() == "bad" && assesment == 5)
 	{
 		student->AddMark(subject, 4 + (rand() % 2));
 	}
 
-	else if (!IsEscellent && CurrentMood == "good" && assesment == 5)
+	else if (!IsEscellent && TeacherMood.GetCurrentMood() == "good" && assesment == 5)
 	{
 		student->AddMark(subject, 4);
 	}
 
-	else if (!IsEscellent && CurrentMood == "bad" && assesment == 5)
+	else if (!IsEscellent && TeacherMood.GetCurrentMood() == "bad" && assesment == 5)
 	{
 		student->AddMark(subject, 2 + (rand() % 2));
 	}
 
 	else student->AddMark(subject, assesment);
+
+	
+	TimeToSwitchMood--;
+
+	if (TimeToSwitchMood == 0)
+	{
+		TeacherMood.RandomUpdateMood();
+		TimeToSwitchMood = 5;
+	}
 }
 
 void Teacher::SetMood(std::string _mood)
 {
-	if (_mood == "good") CurrentMood = "good";
+	TeacherMood.SetMood(_mood);
+}
 
-	else CurrentMood = "bad";
+void Teacher::AddMoodToTeacher(std::string _mood)
+{
+	TeacherMood.AddMood(_mood);
 }
 
 void Teacher::SetState(std::string _state)

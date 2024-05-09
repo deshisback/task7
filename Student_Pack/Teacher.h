@@ -1,5 +1,6 @@
 #pragma once
 #include "Student.h"
+#include "Mood.h"
 #include <ctime>
 
 class Teacher : public Human
@@ -7,7 +8,7 @@ class Teacher : public Human
 	
 private:
 
-	std::string CurrentMood;
+	Mood TeacherMood;
 	std::string CurrentState;
 
 public:
@@ -17,6 +18,8 @@ public:
 	void AddMarkToStudent(Student*& student, std::string subject, int assesment);
 
 	void SetMood(std::string _mood);
+
+	void AddMoodToTeacher(std::string _mood);
 
 	void SetState(std::string _state);
 
