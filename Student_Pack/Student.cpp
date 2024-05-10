@@ -30,9 +30,8 @@ void Student::AddMark(std::string subject, int Assesment)
 
 }
 
-bool Student::IsExcellentStudent()
+double Student::GetAverageGrade()
 {
-
 	int count = marks.size();
 
 	if (count == 0) return true;
@@ -46,8 +45,14 @@ bool Student::IsExcellentStudent()
 
 	double result = sum / count;
 
-	if (result <= 4.5) return false;
-	else return true;
+	return result;
+}
+
+bool Student::IsExcellentStudent()
+{
+
+	if (GetAverageGrade() >= 4.5) return true;
+	else return false;
 
 }
 

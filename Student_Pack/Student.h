@@ -18,6 +18,8 @@ public:
 
 	void AddMark(std::string subject, int Assesment);
 
+	double GetAverageGrade();
+
 	bool IsExcellentStudent();
 
 	void PrintMarks();
