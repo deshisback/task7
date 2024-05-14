@@ -17,7 +17,7 @@ public:
 
 	void AddStudentIntAttendees(Student* student);
 
-	void AddAssesmentToStudent(Teacher teacher);
+	void AddAssesmentToStudent(Teacher* teacher);
 
 };
 

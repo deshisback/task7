@@ -5,6 +5,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{A1CBEF24-8524-4883-BF6F-494230B7A87E}|Student_Pack\\Student_Pack.vcxproj|C:\\Users\\\u0413\u043B\u0435\u0431\\source\\repos\\Student_Pack\\Student_Pack\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A1CBEF24-8524-4883-BF6F-494230B7A87E}|Student_Pack\\Student_Pack.vcxproj|solutionrelative:Student_Pack\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1CBEF24-8524-4883-BF6F-494230B7A87E}|Student_Pack\\Student_Pack.vcxproj|C:\\Users\\\u0413\u043B\u0435\u0431\\source\\repos\\Student_Pack\\Student_Pack\\Meeting.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A1CBEF24-8524-4883-BF6F-494230B7A87E}|Student_Pack\\Student_Pack.vcxproj|solutionrelative:Student_Pack\\Meeting.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1CBEF24-8524-4883-BF6F-494230B7A87E}|Student_Pack\\Student_Pack.vcxproj|C:\\Users\\\u0413\u043B\u0435\u0431\\source\\repos\\Student_Pack\\Student_Pack\\Parent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A1CBEF24-8524-4883-BF6F-494230B7A87E}|Student_Pack\\Student_Pack.vcxproj|solutionrelative:Student_Pack\\Parent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1CBEF24-8524-4883-BF6F-494230B7A87E}|Student_Pack\\Student_Pack.vcxproj|C:\\Users\\\u0413\u043B\u0435\u0431\\source\\repos\\Student_Pack\\Student_Pack\\Teacher.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A1CBEF24-8524-4883-BF6F-494230B7A87E}|Student_Pack\\Student_Pack.vcxproj|solutionrelative:Student_Pack\\Teacher.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,11 +26,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Teacher.cpp",
+              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\source\\repos\\Student_Pack\\Student_Pack\\Teacher.cpp",
+              "RelativeDocumentMoniker": "Student_Pack\\Teacher.cpp",
+              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\source\\repos\\Student_Pack\\Student_Pack\\Teacher.cpp",
+              "RelativeToolTip": "Student_Pack\\Teacher.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-14T13:06:45.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Parent.cpp",
+              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\source\\repos\\Student_Pack\\Student_Pack\\Parent.cpp",
+              "RelativeDocumentMoniker": "Student_Pack\\Parent.cpp",
+              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\source\\repos\\Student_Pack\\Student_Pack\\Parent.cpp",
+              "RelativeToolTip": "Student_Pack\\Parent.cpp",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAEwGQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-14T13:05:39.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Meeting.cpp",
+              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\source\\repos\\Student_Pack\\Student_Pack\\Meeting.cpp",
+              "RelativeDocumentMoniker": "Student_Pack\\Meeting.cpp",
+              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\source\\repos\\Student_Pack\\Student_Pack\\Meeting.cpp",
+              "RelativeToolTip": "Student_Pack\\Meeting.cpp",
+              "ViewState": "AQIAABYAAAAAAAAAAAAUwCAAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-13T12:28:41.631Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -28,7 +79,7 @@
               "RelativeDocumentMoniker": "Student_Pack\\Source.cpp",
               "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\source\\repos\\Student_Pack\\Student_Pack\\Source.cpp",
               "RelativeToolTip": "Student_Pack\\Source.cpp",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAEoAAAAfAAAA",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAYwHUAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-06T02:03:03.718Z",
               "EditorCaption": ""

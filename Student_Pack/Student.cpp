@@ -12,6 +12,23 @@ std::string Student::GetDirection()
 	return Direction;
 }
 
+bool Student::AvailabilityOfGradesInSubject(std::string subject)
+{
+	
+	if (marks.size() == 0) return false;
+
+	else
+	{
+		for (int i = 0; i < marks.size(); i++)
+		{
+			if (marks[i].GetName() == subject && marks[i].AvailabilityOfAssesment()) return true;
+		}
+	}
+
+	return false;
+
+}
+
 void Student::AddMark(std::string subject, int Assesment)
 {
 	for (int i = 0; i < (int)marks.size(); i++)

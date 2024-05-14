@@ -27,9 +27,13 @@ public:
 	
 	void TellAboutSpecificChild(Student* student);
 
+	void TellAboutChildrenInTheSubject(std::string subject);
+
 	void AddMoods(std::string _mood);
 
 	void SetCurrentMood(std::string _mood);
+
+	void TellChildrenNames();
 
 	std::string GetCurrentMood();
 

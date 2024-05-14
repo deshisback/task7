@@ -10,13 +10,18 @@ private:
 
 	Mood TeacherMood;
 	std::string CurrentState;
+	std::string TeacherSubject;
 	int TimeToSwitchMood = 5;
 
 public:
 
 	Teacher(std::string _Name, int _Age) : Human(_Name, _Age) {};
 
-	void SetTimeTiSwitchMood(int Time);
+	void SetTeacherSubject(std::string subject);
+
+	std::string GetTeacherSubject();
+
+	void SetTimeToSwitchMood(int Time);
 
 	void AddMarkToStudent(Student*& student, std::string subject, int assesment);
 

@@ -90,6 +90,16 @@ void Parent::TellAboutSpecificChild(Student* student)
 
 }
 
+void Parent::TellAboutChildrenInTheSubject(std::string subject)
+{
+
+	for (int i = 0; i < Children.size(); i++)
+	{
+		if (Children[i]->AvailabilityOfGradesInSubject(subject)) TellAboutSpecificChild(Children[i]);
+	}
+
+}
+
 void Parent::AddMoods(std::string _mood)
 {
 	ParentMood.AddMood(_mood);
@@ -98,6 +108,15 @@ void Parent::AddMoods(std::string _mood)
 void Parent::SetCurrentMood(std::string _mood)
 {
 	ParentMood.SetMood(_mood);
+}
+
+void Parent::TellChildrenNames()
+{
+	for (int i = 0; i < Children.size(); i++)
+	{
+		std::cout << Children[i]->GetName() << " ";
+	}
+	std::cout << std::endl;
 }
 
 std::string Parent::GetCurrentMood()

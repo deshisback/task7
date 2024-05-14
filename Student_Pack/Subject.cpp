@@ -47,3 +47,9 @@ void Subject::PrintMarks()
 
 	std::cout << std::endl;
 }
+
+bool Subject::AvailabilityOfAssesment()
+{
+	if (SubjectAssesments.empty()) return false;
+	else return true;
+}

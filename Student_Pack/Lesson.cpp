@@ -15,8 +15,8 @@ void Lesson::AddStudentIntAttendees(Student* student)
 	Attendees.push_back(student);
 }
 
-void Lesson::AddAssesmentToStudent(Teacher teacher)
+void Lesson::AddAssesmentToStudent(Teacher* teacher)
 {
-	teacher.AddMarkToStudent(Attendees[rand() % Attendees.size()],
+	teacher->AddMarkToStudent(Attendees[rand() % Attendees.size()],
 		LessonName, 1 + rand() % 5);
 }

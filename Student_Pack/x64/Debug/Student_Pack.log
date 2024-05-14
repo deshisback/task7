@@ -1,3 +1,3 @@
 ﻿  Source.cpp
-C:\Users\Глеб\source\repos\Student_Pack\Student_Pack\Source.cpp(24,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\Глеб\source\repos\Student_Pack\Student_Pack\Source.cpp(25,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
   Student_Pack.vcxproj -> C:\Users\Глеб\source\repos\Student_Pack\x64\Debug\Student_Pack.exe

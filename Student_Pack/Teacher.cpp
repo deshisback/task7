@@ -1,6 +1,16 @@
 #include "Teacher.h"
 
-void Teacher::SetTimeTiSwitchMood(int Time)
+void Teacher::SetTeacherSubject(std::string subject)
+{
+	TeacherSubject = subject;
+}
+
+std::string Teacher::GetTeacherSubject()
+{
+	return TeacherSubject;
+}
+
+void Teacher::SetTimeToSwitchMood(int Time)
 {
 	TimeToSwitchMood = Time;
 }
