@@ -123,3 +123,9 @@ std::string Parent::GetCurrentMood()
 {
 	return ParentMood.GetCurrentMood();
 }
+
+Student* Parent::GetChild(int i)
+{
+	if (i < 0 || i > Children.size()) return nullptr;
+	else return Children[i];
+}

@@ -37,6 +37,8 @@ public:
 
 	std::string GetCurrentMood();
 
+	Student* GetChild(int i); // надобность под вопросом
+
 };
 
 

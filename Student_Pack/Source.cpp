@@ -2,15 +2,9 @@
 //В рамках задания будут появляться новые требования.Необходимо иногда рефакторить код
 //(см low coupling, strong cohesion, SOLID, KISS, YAGNI, DRY и тд) под специфику требований, увеличивая сопровождаемость на будущее.
 
-//Этап 8
-//В предметной области появляется Собрание.На собрании участвуют Преподаватели, Родители.
-// Они обсуждают все прошедшие занятия и родители по каждому из своих детей, которые получали за эти занятия хотя бы одну оценку,
-// высказываются "о конкретном своём ребёнке".Если на собрании нет преподавателя, который проводил Занятие, то эти 
-// выставленные оценки не учитываются при необходимости обсуждения ребёнка.
-// Если на собрании нет родителя ребёнка, то список таких детей формируется в конце собрания и должен быть оглашён.
-// 
-//Архитектурный тест 8
-//Архитектура позволяет проводить несколько собраний по различному набору Занятий, меняя состав преподавателей и родителей.
+//Этап 9
+//В предметной области появляется Бабушка, которая являясь родителем / опекуном ребёнка может выступать на собраниях и обладает теми же функциями,
+//что и Родитель.Единственное, что у Бабушка всегда о своих детях говорит хорошо, а о чужих по - настроению.
 
 
 #include "Lesson.h"
@@ -96,8 +90,6 @@ int main()
 	p->AddMoods("bad");
 	p->AddMoods("neutral");
 	p->SetCurrentMood("good");
-	p->AddChildren(s1);
-	p->AddChildren(s2);
 	p->AddChildren(s3);
 
 	Parent* p2 = new Parent("Kristina", 46);
@@ -108,11 +100,21 @@ int main()
 	p2->AddChildren(s4);
 	p2->AddChildren(s5);
 
+	Grandmother* gm = new Grandmother("Natalya", 71);
+	gm->AddGrandChildren(s1);
+	gm->AddGrandChildren(s2);
+	gm->AddMoods("good");
+	gm->AddMoods("bad");
+	gm->AddMoods("neutral");
+	gm->SetCurrentMood("good");
+
 	ppi.AddParentToList(p);
 	ppi.AddParentToList(p2);
+	ppi.AddGrandMotherToList(gm);
 
-	m.AddParentToMeeting(p);
-	m.AddParentToMeeting(p2);
+	//m.AddParentToMeeting(p);
+	//m.AddParentToMeeting(p2);
+	m.AddGrandMotherToMeeting(gm);
 	m.AddTeacherToMeeting(t);
 	m.AddTeacherToMeeting(t1);
 	m.AddTeacherToMeeting(t2);
@@ -120,6 +122,8 @@ int main()
 	m.ParentTellAboutChild();
 	cout << endl;
 	m.ListOfChildrenOfAbsentParent(ppi);
+	cout << endl;
 
+	gm->Telling(s5);
 
 }

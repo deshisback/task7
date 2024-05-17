@@ -24,6 +24,16 @@ void Meeting::AddParentToMeeting(Parent* parent)
 
 }
 
+void Meeting::AddGrandMotherToMeeting(Grandmother* grandmother)
+{
+	if (std::find(GrandMothers.begin(), GrandMothers.end(), grandmother) != GrandMothers.end())
+	{
+		return;
+	}
+
+	GrandMothers.push_back(grandmother);
+}
+
 void Meeting::ParentTellAboutChild()
 {
 
@@ -33,6 +43,15 @@ void Meeting::ParentTellAboutChild()
 		{
 			std::string subject = Teachers[i]->GetTeacherSubject();
 			Parents[j]->TellAboutChildrenInTheSubject(subject);
+		}
+	}
+
+	for (int i = 0; i < Teachers.size(); i++)
+	{
+		for (int j = 0; j < GrandMothers.size(); j++)
+		{
+			std::string subject = Teachers[i]->GetTeacherSubject();
+			GrandMothers[j]->TellAboutChildrenInTheSubject(subject);
 		}
 	}
 
